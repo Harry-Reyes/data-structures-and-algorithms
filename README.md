@@ -21,4 +21,4 @@
 - **Starting Point:** getEntries()
 - **Next:** searchFrom_left()
 - **Ending Point:** use_isFound()
-        # if isFound() = true: searchFrom_right()
+    - if isFound() = true: searchFrom_right()
