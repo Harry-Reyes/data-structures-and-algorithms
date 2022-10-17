@@ -22,3 +22,19 @@
 - **Next:** searchFrom_left()
 - **Ending Point:** use_isFound()
     - if isFound() = true: searchFrom_right()
+
+## Binary Search Algorithm
+
+### Functions
+
+1. getEntries() - User is requested to input a string list in a format of numbers separated by commas and the value converts into an integer list. Then, a number to find is requested.
+
+2. check_list() - An integer list then pass through validation. If each of the index values is less than the next, the script will return an error indicator: 'List not found' and exits the program.
+
+3. binary_search() - Implements the binary search algorithm and returns the index number and steps taken.
+
+### Flow
+
+- **Starting Point:** getEntries()
+- **Next:** check_list()
+- **Ending Point:** binary_search()
