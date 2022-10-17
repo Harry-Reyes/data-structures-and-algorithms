@@ -33,7 +33,7 @@ def binary_search():
         elif entry[m] > entry_numberToSearch:
             r = m - 1
             m = int((l+r)/2)
-    print("Index:", entry.index(m), "\nSteps taken:", steps)
+    print("Index:", m, "\nSteps taken:", steps)
 getEntries()
 check_list()
 binary_search()
