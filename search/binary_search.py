@@ -24,9 +24,6 @@ def binary_search():
     m = int((l+r)/2)
     while entry[m] != entry_numberToSearch:
         steps += 1
-        # if entry[l] > entry[r]:
-        #     print("List not sorted")
-        #     exit()
         if entry[m] < entry_numberToSearch:
             l = m + 1
             m = int((l+r)/2)
