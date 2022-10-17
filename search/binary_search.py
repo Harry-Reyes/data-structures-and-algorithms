@@ -6,6 +6,15 @@ def getEntries():
     entry = list(map(int, input("Type your entry: ").split(',')))
     entry_numberToSearch = int(input("Number to search: "))
     print("Your entry is", entry)
+def check_list():
+    i = 0
+    secondLast_index = entry.index(entry[-1]) - 1
+    while i <= secondLast_index:
+        if entry[i] > entry[i + 1]:
+            print("List not sorted")
+            exit()
+        else:
+            i += 1
 def binary_search():
     global m
     global steps
@@ -13,17 +22,18 @@ def binary_search():
     l = 0
     r = entry.index(entry[-1])
     m = int((l+r)/2)
-    while m != entry_numberToSearch:
+    while entry[m] != entry_numberToSearch:
         steps += 1
-        if entry[l] > entry[r]:
-            print("List not sorted")
-            exit()
-        elif m < entry_numberToSearch:
+        # if entry[l] > entry[r]:
+        #     print("List not sorted")
+        #     exit()
+        if entry[m] < entry_numberToSearch:
             l = m + 1
             m = int((l+r)/2)
-        elif m > entry_numberToSearch:
+        elif entry[m] > entry_numberToSearch:
             r = m - 1
             m = int((l+r)/2)
     print("Index:", entry.index(m), "\nSteps taken:", steps)
 getEntries()
+check_list()
 binary_search()
