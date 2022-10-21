@@ -6,8 +6,6 @@ def getEntries():
 def sort():
     steps = 0
     i = entry.index(entry[-1])
-    n = 0
-    memory = 0
     while i > 0:
         n = 0
         steps += 1
