@@ -17,20 +17,20 @@ def check_list():
             i += 1
 def binary_search():
     global m
-    global steps
-    steps = 0
+    global attempts
+    attempts = 0
     l = 0
     r = entry.index(entry[-1])
     m = int((l+r)/2)
     while entry[m] != entry_numberToSearch:
-        steps += 1
+        attempts += 1
         if entry[m] < entry_numberToSearch:
             l = m + 1
             m = int((l+r)/2)
         elif entry[m] > entry_numberToSearch:
             r = m - 1
             m = int((l+r)/2)
-    print("Index:", m, "\nSteps taken:", steps)
+    print("Index:", m, "\nAttempts made:", attempts)
 getEntries()
 check_list()
 binary_search()
