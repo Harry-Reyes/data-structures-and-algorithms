@@ -5,7 +5,7 @@ def getEntries():
     print("Your entry is", entry)
 def sort():
     steps = 0
-    i = entry.index(entry[-1])
+    i = len(entry)-1
     while i > 0:
         n = 0
         steps += 1
