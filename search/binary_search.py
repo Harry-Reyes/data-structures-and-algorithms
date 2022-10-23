@@ -5,17 +5,12 @@ def getEntries():
     entry_numberToSearch = 0
     entry = list(map(int, input("Type your entry: ").split(',')))
     entry_numberToSearch = int(input("Number to search: "))
-    print("Your entry is", entry)
+    print("Your entry is", entry, "\n")
 
 def check_list():
-    i = 0
-    secondLast_index = len(entry)-2
-    while i <= secondLast_index:
+    for i in range(len(entry)-1):
         if entry[i] > entry[i + 1]:
-            print("List not sorted")
-            exit()
-        else:
-            i += 1
+            raise Exception("List not sorted")
 
 def binary_search():
     global m
