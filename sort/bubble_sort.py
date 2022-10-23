@@ -3,6 +3,7 @@ def getEntries():
     entry = ''
     entry = list(map(int, input("Type your entry: ").split(',')))
     print("Your entry is", entry)
+
 def sort():
     steps = 0
     i = len(entry)-1
@@ -17,5 +18,6 @@ def sort():
             n += 1
         i -= 1
     print("Your sorted sequence:", entry, "\nSteps taken:", steps)
+
 getEntries()
 sort()

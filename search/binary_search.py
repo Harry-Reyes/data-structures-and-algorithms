@@ -7,7 +7,6 @@ def getEntries():
     entry_numberToSearch = int(input("Number to search: "))
     print("Your entry is", entry)
 
-
 def check_list():
     i = 0
     secondLast_index = len(entry)-2
@@ -17,7 +16,6 @@ def check_list():
             exit()
         else:
             i += 1
-
 
 def binary_search():
     global m
@@ -35,7 +33,6 @@ def binary_search():
             r = m - 1
             m = int((l+r)/2)
     print("Index:", m, "\nAttempts made:", attempts)
-
 
 getEntries()
 check_list()
