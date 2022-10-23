@@ -2,7 +2,7 @@ def getEntries():
     global entry
     entry = ''
     entry = list(map(int, input("Type your entry: ").split(',')))
-    print("Your entry is", entry)
+    print("Your entry is", entry, "\n")
 
 def sort():
     steps = 0
