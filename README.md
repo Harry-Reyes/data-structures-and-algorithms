@@ -51,3 +51,16 @@
 
 - **Starting Point:** getEntries()
 - **Ending Point:** sort()
+
+## Selection Sort Algorithm
+
+### Functions
+
+1. getEntries() - User is requested to input a string list in a format of numbers separated by commas and the value converts into an integer list.
+
+2. sort() - Sorts the sequence in a selection sort manner until ascending order is made, and prints the output. A variable is added for memory in order to swap indexes' values properly.
+
+### Flow
+
+- **Starting Point:** getEntries()
+- **Ending Point:** sort()
