@@ -18,6 +18,12 @@ def sort():
             n += 1
         i -= 1
     print("Your sorted sequence:", entry, "\nSteps taken:", steps)
+    print("Comma-only form:", end=' ')
+    for j in range(0, len(entry)):
+        if j == len(entry)-1:
+            print(entry[j])
+        else:
+            print(entry[j], end=',')
 
 getEntries()
 sort()

@@ -21,6 +21,12 @@ def sort():
         entry[i] = memory
         i += 1
     print("Your sorted sequence:", entry, "\nSteps taken:", steps)
+    print("Comma-only form:", end=' ')
+    for k in range(0, len(entry)):
+        if k == len(entry)-1:
+            print(entry[k])
+        else:
+            print(entry[k], end=',')
 
 getEntries()
 sort()
