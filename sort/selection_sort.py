@@ -1,7 +1,3 @@
-from copy import deepcopy
-from xml.dom import minicompat
-
-
 def getEntries():
     global entry
     entry = ''
