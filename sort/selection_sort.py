@@ -6,20 +6,14 @@ def getEntries():
 
 def sort():
     steps = 0
-    i = 0
     n = len(entry)
-    while i < n - 1:
+    for i in range(0, n-1):
         steps += 1
         minIndex = i
-        j = i + 1
-        while j < n:
+        for j in range(i+1, n):
             if entry[j] < entry[minIndex]:
                 minIndex = j
-            j += 1
-        memory = entry[minIndex]
-        entry[minIndex] = entry[i]
-        entry[i] = memory
-        i += 1
+        entry[i], entry[minIndex] = entry[minIndex], entry[i]
     print("Your sorted sequence:", entry, "\nSteps taken:", steps)
     print("Comma-only form:", end=' ')
     for k in range(0, len(entry)):
